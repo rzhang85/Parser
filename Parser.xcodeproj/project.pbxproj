@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0442C6F91F2B7C7A00A0F015 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0442C6F81F2B7C7A00A0F015 /* main.c */; };
+		0442C7011F2B7CF400A0F015 /* inputbuf.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0442C6FF1F2B7CF400A0F015 /* inputbuf.cc */; };
+		0442C7041F2B7DEE00A0F015 /* lexer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0442C7021F2B7DEE00A0F015 /* lexer.cc */; };
+		0442C7071F2B80BC00A0F015 /* parser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0442C7051F2B80BC00A0F015 /* parser.cc */; };
+		0442C7091F2C5E3900A0F015 /* test.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0442C7081F2C5E3900A0F015 /* test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0442C6F31F2B7C7A00A0F015 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
+				0442C7091F2C5E3900A0F015 /* test.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -24,7 +28,13 @@
 
 /* Begin PBXFileReference section */
 		0442C6F51F2B7C7A00A0F015 /* Parser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Parser; sourceTree = BUILT_PRODUCTS_DIR; };
-		0442C6F81F2B7C7A00A0F015 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		0442C6FF1F2B7CF400A0F015 /* inputbuf.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputbuf.cc; sourceTree = "<group>"; };
+		0442C7001F2B7CF400A0F015 /* inputbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputbuf.h; sourceTree = "<group>"; };
+		0442C7021F2B7DEE00A0F015 /* lexer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lexer.cc; sourceTree = "<group>"; };
+		0442C7031F2B7DEE00A0F015 /* lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
+		0442C7051F2B80BC00A0F015 /* parser.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cc; sourceTree = "<group>"; };
+		0442C7061F2B80BC00A0F015 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		0442C7081F2C5E3900A0F015 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,13 @@
 		0442C6F71F2B7C7A00A0F015 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				0442C6F81F2B7C7A00A0F015 /* main.c */,
+				0442C6FF1F2B7CF400A0F015 /* inputbuf.cc */,
+				0442C7001F2B7CF400A0F015 /* inputbuf.h */,
+				0442C7021F2B7DEE00A0F015 /* lexer.cc */,
+				0442C7031F2B7DEE00A0F015 /* lexer.h */,
+				0442C7051F2B80BC00A0F015 /* parser.cc */,
+				0442C7061F2B80BC00A0F015 /* parser.h */,
+				0442C7081F2C5E3900A0F015 /* test.txt */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -119,7 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0442C6F91F2B7C7A00A0F015 /* main.c in Sources */,
+				0442C7041F2B7DEE00A0F015 /* lexer.cc in Sources */,
+				0442C7071F2B80BC00A0F015 /* parser.cc in Sources */,
+				0442C7011F2B7CF400A0F015 /* inputbuf.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +266,7 @@
 				0442C6FE1F2B7C7A00A0F015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
